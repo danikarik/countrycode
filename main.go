@@ -57,6 +57,6 @@ func main() {
 	}
 
 	for k, v := range hmap {
-		file.WriteString(fmt.Sprintf("%s\t%s\n", k, v))
+		file.WriteString(fmt.Sprintf("\"%s\": \"%s\",\n", k, v))
 	}
 }
